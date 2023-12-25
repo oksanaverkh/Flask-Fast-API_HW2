@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container m-3">
+    <form action="/login" method=post>
+        <form method="post">
+            <input type="text" name="username" placeholder="Имя">
+            <input type="text" name="email" placeholder="Электронная почта">
+            <input type="submit" value="Отправить">
+
+        </form>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="/login" method=post>
+        <button><a class="mt-4" href="{{ url_for('getcookie') }}">Показать cookie</a></button>
+    </form>
+
+
+
+</div>
+
+{% endblock content %}

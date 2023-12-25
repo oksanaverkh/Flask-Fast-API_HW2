@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+Привет, {{ context }}
+
+
+<div class="container m-3">
+    <form action="/login_success" method=post>
+        <button><a class="mt-4" href="{{ url_for('del_cookie') }}">Выйти</a></button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="/login_success" method=post>
+        <button><a class="mt-4" href="{{ url_for('getcookie') }}">Показать cookie</a></button>
+    </form>
+</div>
+
+{% endblock %}
